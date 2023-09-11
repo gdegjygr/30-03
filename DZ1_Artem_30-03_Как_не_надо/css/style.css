@@ -1,0 +1,19 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: center;
+    overflow: hidden;
+}
+body {
+    text-align: center;
+    align-items: center;
+}
+.background {
+    background-image: url(/images/space-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 730px;
+    max-width: 1920px;
+    min-width: 1440px;
+    margin: 0 auto;
+}
