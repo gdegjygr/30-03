@@ -1,9 +1,10 @@
 let numbers = [123, 234, 256, 345, 456, 567, 543, 67, 55, 23, 28, 50]
+let newArray = []    
     for(let i = 0; i < numbers.length; i++){
-        let num = String(numbers[i])
-        let char = num[0]
+        newArray = String(numbers[i])
+        char = newArray[0]
         if(char == 2 || char == 5){
-            console.log(num)
+            console.log(newArray)
         }
     }
 
