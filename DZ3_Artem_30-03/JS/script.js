@@ -9,25 +9,19 @@ let newArray = []
     }
 
 
-let orbiter = {
-        forge: 'Bolter Prime',
-        inventory: 'Credits & gun mods',
-        pet: 'Infected dog Archy',
-        relicts: 'Axi, Mezo, Neo, Lit',
-        operator: 'juvenile moron',
+function frame (){
+    let x = 10
+    console.log(typeof x)
+    let y = '20'
+    console.log(typeof y)
+    let z = [1, '2', undefined]
+    console.log(typeof z)
+    let w = true
+    console.log(typeof w)
 }
+frame()
+console.log(typeof frame)
 
-let warframe = prompt('Which section of the ship do you need?')
-    for(let i = 0; i< warframe.length; i++){
-        if(warframe in orbiter){
-            console.log( 'ACCEPT')
-            console.log(typeof warframe)
-        }else {
-            console.log('IGNORE')
-            console.log(typeof undefined)
-        }
-console.log(typeof Boolean)
-}
 
 
 let tags = ['li', 'div', 'li', 'p', 'h1', 'p', 'h1', 'div', 'div', 'li', 'h1', 'p', 'h1', 'ol', 'br']
@@ -42,4 +36,4 @@ let result = {}
     }
     for(let key in result) console.log(Object(result))
 
-//40 строк кода в общем
+//36 строк кода в общем
