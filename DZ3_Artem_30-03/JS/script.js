@@ -40,7 +40,6 @@ let result = {}
             result[quantity] = 1
         }
     }
-    for(let key in result){
-        document.write('ко-во ' + key + '==' + result[key] + ' шт <br>')
-    }
+    for(let key in result) console.log(Object(result))
+
 //40 строк кода в общем
