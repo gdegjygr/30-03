@@ -1,0 +1,141 @@
+* {
+    margin: 0 auto;
+}
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.intro {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro__media{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    /* свойства left: 0, top: 0, width: 100%, height: 100% - отвечают за полноэкранное отображ. плеера */
+}
+.intro__media-vid{
+    width: 100%;
+}
+.intro__content{
+    z-index: 2;
+    color: #ea1212;
+    text-align: center;
+    text-shadow: 6px 6px 3px rgb(34, 4, 4);
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    width: 250px;
+    margin-bottom: 380px;
+}
+
+.btn-block {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 19px;
+    color: #e4170c;
+}
+#btn {
+    background-color: #1a1a1a9c;
+    color: #ab160e;
+    border: 1px #e81409;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#btn:hover {
+    cursor: pointer;
+    color: #ff0d00;
+    padding: 10px 30px;
+    background-color: #1a1a1a4e;
+}
+.info {
+    width: 100% auto;
+    height: 1450px;
+    background: linear-gradient(to top, #862727, #3a393c, #454445, #3a393c, #000000);
+    padding-bottom: 60px;
+}
+
+.footer{
+    background-color: #2A2A2A;
+    width: 410px;
+    height: 570px;
+    border: 2px solid #767170;
+    border-radius: 6px; 
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.scale {
+    overflow: hidden;
+    display: flex;
+    width: 410px;
+    height: 210px;
+}
+.footer__image{
+    display: flex;
+    transition: 0.8s;
+    overflow: hidden;
+}
+.footer:hover .footer__image {
+    transform: scale(118%);
+}
+.footer:hover {
+    cursor: pointer;
+    background-color: #291d1d;
+}
+.footer:hover p {
+    color: #eb2e24;
+}
+.footer__text {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25.5px;
+    padding: 50px;
+    color: rgb(216, 216, 216);
+    transition: 0.5s;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: -30px;
+    padding-top: 160px;
+    margin-bottom: 100px;
+}
+.image-scale {
+    width: 410px;
+}
+.footer:hover #block-scale {
+    transform: scale(160%);
+}
+.parralax-image {
+    height: 600px;
+    display: flex;
+    margin: 0 auto;
+    transform: transform 0.2s ease;
+}
+.footer-end {
+    display: flex;
+    margin: 0 auto;
+    background-color: #161617;
+    width: 100%;
+    padding: 16px 0;
+    color: #6c6c70;
+}
