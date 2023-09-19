@@ -35,18 +35,9 @@ console.log(resultArray)
 
 
 let arrayOfArrays = Object.values(resultArray)
-//Сортировка массива подмассивов по ко-ву элементов - Метод пузырька)
-for(let i = 0; i < arrayOfArrays.length; i++){
-    for(let y = 0; y < arrayOfArrays.length - i - 1; i++){
-        if(arrayOfArrays[y].length < arrayOfArrays[y + i].length) 
-        //Обмен местами подмассивов
-        {const temp = arrayOfArrays[y]
-         arrayOfArrays[y] = arrayOfArrays[y + i]
-         arrayOfArrays[y + i] = temp}
-    }
-}
-console.log(arrayOfArrays)
-
+//Сортировка массива подмассивов по ко-ву элементов c помощью .sort()
+let sorted = arrayOfArrays.sort((arr1, arr2)=> arr1 - arr2)
+console.log(sorted)
 
 const filterArray = arrayOfArrays.flat().filter(element => {
     if(typeof element === 'string') {return element.length > 3}
